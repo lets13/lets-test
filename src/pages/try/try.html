@@ -1,0 +1,39 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Generalist</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-list *ngIf="currentSubject">
+    <ion-item no-lines>
+      <ion-label>
+        <strong>Category: {{currentSubject.name}}</strong><br>
+        <small>Author: {{currentSubject.author}}</small>
+      </ion-label>
+      <p item-right style="font-size: 18px; font-weight: bold"> {{ currentIndex + 1}} </p>
+    </ion-item>
+    <hr>
+    <ion-item no-lines *ngIf="currentQuestions">
+      <ion-label text-wrap>{{currentQuestions.question}}</ion-label>
+    </ion-item>
+      <ion-list radio-group>
+        <ion-item *ngFor="let item of choice; let i = index;" no-lines> 
+          <ion-label>{{item.choice}}</ion-label> 
+          <ion-radio value="{{i + 1}}" (ionSelect)="selectedchoice = item.choice"></ion-radio>
+        </ion-item>
+      </ion-list>
+      <hr>
+    <!-- <ion-item no-lines>
+      <ion-label><small>Contributor: {{currentData.gname}}</small><br>
+      <small>Reference: {{currentData.greference}}</small></ion-label>
+    </ion-item>  -->
+  </ion-list>
+  
+  <ion-item no-lines>
+    <button ion-button round (click)="next()" item-end>Next</button>
+  </ion-item>
+
+</ion-content>

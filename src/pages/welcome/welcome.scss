@@ -1,0 +1,36 @@
+page-welcome {
+
+    .welcome-bg{
+        background-position: center;
+        background-size: cover;
+        background-image: url('../assets/imgs/blur.png');
+        text-align: center;
+    }
+
+    .welcome-caption{
+        text-align: center;
+        color: white;
+        font-size: 45px;
+        font-weight: normal;
+    }
+
+    .welcome-sub{
+
+        font-size: 18px;
+        text-align: center;
+        color: white;
+
+    }
+
+    .welcome-spacer1{
+        height: 40px;
+    }
+
+    .welcome-spacer2{
+        height: 10px;
+    }
+
+    .welcome-logo{
+        width: 50%;
+    }
+}

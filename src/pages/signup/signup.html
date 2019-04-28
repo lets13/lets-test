@@ -1,0 +1,45 @@
+<ion-content padding class="content">
+  <div class="spacer1"></div>
+  <img src="assets/imgs/logo.png" class="login-logo"/>
+  <div class="spacer2"></div>
+  <form>
+    <ion-list no-line>
+      <ion-item>
+        <ion-icon name="person" item-start color="leaf"></ion-icon> 
+        <ion-input type="text" placeholder="Fullname" name="name" #name></ion-input>
+      </ion-item>
+      <div class="spacer3"></div>
+      <ion-item>
+        <ion-icon name="person" item-start color="leaf"></ion-icon> 
+        <ion-input type="text" placeholder="Username" name="username" #username></ion-input>
+      </ion-item>
+      <div class="spacer3"></div>
+      <ion-item>
+        <ion-icon name="mail" item-start color="leaf"></ion-icon> 
+        <ion-input type="email" placeholder="Email Address" name="email" #email></ion-input>
+      </ion-item>
+      <div class="spacer3"></div>
+      <ion-item>
+        <ion-icon name="phone-portrait" item-start color="leaf"></ion-icon> 
+        <ion-input type="number" placeholder="Mobile Number" name="mobile" #mobile></ion-input>
+      </ion-item>
+      <div class="spacer3"></div>
+      <ion-item>
+        <ion-icon name="lock" item-start color="leaf"></ion-icon> 
+        <ion-input type="password" placeholder="Password" name="password" #password></ion-input>
+      </ion-item>
+      <div class="spacer3"></div>
+      <ion-item>
+        <ion-icon name="lock" item-start color="leaf"></ion-icon> 
+        <ion-input type="password" placeholder="Retype Password" name="rpassword" #rpassword></ion-input>
+      </ion-item>
+    </ion-list>
+    <p class="terms">By signing up you agree to our <strong>Terms & Conditions and Privacy Policy</strong>.</p>
+    <button ion-button color="leaf" round block on-click="signup()">
+      Sign up
+    </button>
+    <button ion-button clear block on-click="login()">
+      Already have account?
+    </button>
+  </form>
+</ion-content>

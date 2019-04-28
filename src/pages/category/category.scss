@@ -1,0 +1,46 @@
+page-category {
+
+    .home-page2{
+        text-align: center;
+    }
+
+    .home-spacer2{
+        height:18px;
+    }
+
+    .home-logo{
+        width:50%;
+    }
+
+    .ic{
+        font-size: 40px;
+        font-weight: bolder;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    ion-card {
+        height: 130px;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        display: flex!important;
+        align-items: center!important;
+    }
+    
+      .card-title {
+        font-size: 1.5em;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        // font-size: 1.0em;
+        // position: absolute;
+        // top: 52%;
+        // width: 100%;
+        // color: #fff;
+      }
+    
+}

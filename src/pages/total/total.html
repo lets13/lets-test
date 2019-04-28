@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Results</ion-title>
+    </ion-navbar>
+</ion-header>
+    
+
+<ion-content padding>
+    <div class="divider"></div>
+    <div class="center">
+        <h5>Here's your result</h5>
+        <circle-progress
+        percent={{percent}}
+        [radius]="100"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="300"
+        ></circle-progress>
+    <div class="divider"></div>
+
+    <button ion-button round color="primary" (click)="goLogin()">REVIEW TEST</button>
+    </div>
+</ion-content>

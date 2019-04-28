@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+    <ion-icon name="menu"> </ion-icon>
+    </button> 
+    <ion-title>LET's Start</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="home-spacer2"></div>
+  <ion-card on-click="goToTry()" color="primary">
+  <p item-start class="ic">1</p>
+    <div class="card-title">Generalist Education</div>
+    <ion-icon name="arrow-dropright" item-right class="ic"></ion-icon>
+  </ion-card>
+  <ion-card on-click="showAlert()" color="danger">
+    <p item-start class="ic">2</p>
+    <div class="card-title">Professional Education</div>
+    <ion-icon name="arrow-dropright" item-right class="ic"></ion-icon>
+  </ion-card>
+  <ion-card on-click="showAlert()" color="secondary">
+    <p item-start class="ic">3</p>
+    <div class="card-title"> Technology and Livelihood Education</div>
+    <ion-icon name="arrow-dropright" item-right class="ic"></ion-icon>
+  </ion-card>
+</ion-content>

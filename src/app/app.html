@@ -1,0 +1,35 @@
+<ion-menu [content]="mainContent">
+    <ion-content>
+      <div style="text-align:center;">
+          <img src="http://localhost/let/upload/avatar/girl.png" style="width: 40%;"/>
+          <h3>Nazarene Neneng</h3>
+      </div>
+      <ion-list>
+        <button ion-item (click)="Category()">
+          <ion-icon name="home" class="ion-ic"></ion-icon>
+          Home
+        </button>
+        <button ion-item (click)="Profile()">
+          <ion-icon name="person" class="ion-ic"></ion-icon>
+          Profile
+        </button>
+        <button ion-item (click)="SendQuestioner()">
+          <ion-icon name="send" class="ion-ic"></ion-icon>
+          Send Questioner
+          </button>
+        <button ion-item (click)="About()">
+          <ion-icon name="information-circle" class="ion-ic"></ion-icon>
+          About
+        </button>
+        <!-- <button ion-item (click)="mapage()">
+          try
+        </button> -->
+        <button ion-item (click)="Logout()">
+          <ion-icon name="power" class="ion-ic"></ion-icon>
+          Logout
+        </button>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>
